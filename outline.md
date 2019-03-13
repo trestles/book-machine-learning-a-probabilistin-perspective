@@ -91,9 +91,43 @@
 
 #### 4 Gaussian Models p99
 - 4.1 Introduction p99
+  - 4.1.1 Notation p99
+  - 4.1.2 Basics p99
+    - Algorithm 4.1
+    - Fig 4.1 - Visualization of a 2 dimensional Gaussian 
+  density p100
+  - 4.1.3 MLE for an MVN p101
+    - Proof 4.10 p101
+  - 4.1.4 *Maximum entropy deviation of the Gaussian p103
 - 4.2 Guassian discriminant analysis p103
+  - Figure 4.2 (a) Height / weight data (b) Visualization of 2d Guassians fit to each class p104
+  - 4.2.1 Quadratic discriminant analysis (QDA) p104
+  - 4.2.2 Linear discriminant analysis (LDA) p105
+  - 4.2.3. Two-class LDA p106
+  - 4.2.4 MLE for discriminant analysis p108
+  - 4.2.5 Strategies for preventing overfitting p108
+  - 4.2.6 Regularized LDA * p109
+  - 4.2.7 Diaganol LDA p110
+  - 4.2.8 Nearest shrunken centroids classifier p111
 - 4.3 Inference in jointly Gaussian distributions p112
+  - 4.3.1 Statement of the result p113
+  - 4.3.2 Examples p113
+    - 4.3.2.1 Marginals and conditionals of a 2d Gaussian p113
+    - 4.3.2.2 Interpolating noise-free data p114
+    - 4.3.2.3 Data imputation p116
+  - 4.3.3 Information form p117
+  - 4.3.4 Proof of the result p118
+    - 4.3.4.1 Inverse of a partitioned matrix using Schur complements p118
+    - 4.3.4.2 The matrix invresion lemma p120
+    - 4.3.4.3 Proof of Gaussian conditioning formulas p120
 - 4.4 Linear Gaussian systems p121
+  - 4.4.1 Statement of the result p122
+  - 4.4.2 Examples p122
+    - 4.4.2.1 Inferring an unknown scalar from noisy measurements p122
+    - 4.4.2.2 Inferring an unknown vector from noisy measurments p124
+    - 4.4.2.3 Interpolating noisy data p125
+  - 4.4.3 *Proof of the result p127
+
 - 4.5 *Digression: The Wishart distribution p128
 - 4.6 Inferring the parameters of an MVN p129
 
