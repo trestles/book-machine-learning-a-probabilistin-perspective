@@ -241,17 +241,62 @@
 - 7.1 Introduction p219
 - 7.2 Model specification p219
 - 7.3 Maximum likelihood estimation (least squares) p219
+  - 7.3.1 Derivation of the MLE p221
+  - 7.3.2 Geometric interpretation p222
+  - 7.3.3 Convexity p223
 - 7.4 *Robust linear regression p225
 - 7.5 Ridge regression p227
+  - 7.5.1 Basic idea p227
+  - 7.5.2 *Numerically stable computation p229
+  - 7.5.3 *Connection with PCA p230
+  - 7.5.4 Regularization effects of big data p232
 - 7.6 Bayesian linear regression p233
+  - 7.6.1 Computing the posterior p234
+  - 7.6.2 Computing the posterior predictive p235
+  - 7.6.3 *Bayesian inference when is unknown p236
+    - 7.6.3.1 Conjugate prior p236
+    - 7.6.3.2 Uninformative prior p238
+    - 7.6.3.3 *An example where Bayesian and frequentist inference coincide p239
+  - 7.6.4 EB for linear regression (evidence procedure) p240
+
 
 #### 8 Logistic Regression p247
 - 8.1 Introduction p247
 - 8.2 Model specification p247
 - 8.3 Model fitting p248
+  - 8.3.1 MLE p249
+  - 8.3.2 Steepest descent p249
+  - 8.3.3 Newton's method p251
+  - 8.3.4 Iteratively reweighted least squares (IRLS) p253
+  - 8.3.5 Quasi-Newton (variable metric) methods p253
+  - 8.3.6 l2 regularization p254
+  - 8.3.7 Multi-class logistic regression p255
 - 8.4 Bayesian logistic regression p257
+  - 8.4.1 Laplace approximation p257
+  - 8.4.2 Derivation of the Bayesian information criterion (BIC) p258
+  - 8.4.3 Gaussian approximation for logistic regression p258
+  - 8.4.4 Approximating the posterior predictive p260
+    - 8.4.4.1 Monte Carlo approximation p260
+    - 8.4.4.2 Probit approximation (moderated output) p261
+  - 8.4.5 *Residual analysis (outlier detection) p263
 - 8.5 Online learning and stochastic optimization p264
+  - 8.5.1 Online learning and regret minimization p264
+  - 8.5.2 Stochastic optimization and risk minimization p265
+    - 8.5.2.1 Setting the step size p265
+    - 8.5.2.2 Per-parameter step sizes p266
+    - 8.5.2.3 SGD compared to batch learning p266
+  - 8.5.3 The LMS Algorithm p267
+  - 8.5.4 The perceptron algorithm p268
+  - 8.5.5 A Bayesian view p270
 - 8.6 Generative vs discriminitive classifiers p270
+  - 8.6.1 Pros and cons of each approach p271
+  - 8.6.2 Dealing with missing data p271
+    - 8.6.2.1 Missing data at test time p273
+    - 8.6.2.2 Missing data at training time p274
+  - 8.6.3 *Fisher's linear discriminant analysis (FLDA) p274
+    - 8.6.3.1 Derivation of the optimal 1d projection p274
+    - 8.6.3.2 Extension to higher dimensions and multiple classes p277
+    - 8.6.3.3 *Probabilistic interpretation of FLDA p278
 
 #### 9 Generalized Linear models and the exponential family p283
 - 9.1 Introduction 
