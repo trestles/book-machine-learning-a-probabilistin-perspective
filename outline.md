@@ -127,26 +127,115 @@
     - 4.4.2.2 Inferring an unknown vector from noisy measurments p124
     - 4.4.2.3 Interpolating noisy data p125
   - 4.4.3 *Proof of the result p127
-
 - 4.5 *Digression: The Wishart distribution p128
+  - 4.5.1 Inverse Wishart distribution p129
+  - 4.5.2 Visualizing the Wishart distribution p129
 - 4.6 Inferring the parameters of an MVN p129
+  - 4.6.1 Posterior distribution of mu p130
+  - 4.6.2 Posterior distribution of E p131
+    - 4.6.2.1 MAP estimation p131
+    - 4.6.2.2 Univariate posterior p133
+  - 4.6.3 Posterior distribution of u and E p134
+    - 4.6.3.1 Likelihood p134
+    - 4.6.3.2 Prior p134
+    - 4.6.3.3 Posterior p136
+    - 4.6.3.4 Posterior mode p136
+    - 4.6.3.5 Posterior marginals p136
+    - 4.6.3.6 Posterior predictive p137
+    - 4.6.3.7 Posterior for scalar data p138
+    - 4.6.3.8 Bayesian t-test p139
+    - 4.6.3.9 Connection with frequentist statistics p140
+  - *4.6.4 Sensor fusion with unknown properties p140
 
 #### 5 Bayesian Statistics 151
 - 5.1 Introduction p151
 - 5.2 Summarizing posterior distributions p151
+  - 5.2.1 MAP estimation p151
+    - 5.2.1.1 No measure of uncertainty p152
+    - 5.2.1.2 Plugging in the MAP can result in overfitting p152
+    - 5.2.1.3 The mode is an untypical point p152
+    - 5.2.1.4 Map estimation is not invariant to reparameterizatin p153
+  - 5.2.2 Credible intervals p154
+    - 5.2.2.1 *Highest posterior desnity regions p155
+  - 5.2.3 Inference for a difference in porportions p156
 - 5.3 Bayesian model selection p157
+  - 5.3.1 Bayesian Occam's razor p158
+  - 5.3.2 Computing the marginal likelihood (evidence) p160
+    - 5.3.2.1 Beta-binomial model p162
+    - 5.3.2.2 Dirichlet-multinoulli model p162
+    - 5.3.2.3 Gaussian-Wishart-Gaussian model p163
+    - 5.3.2.4 BIC approximation to log marginal likelihood p163
+    - 5.3.2.5 Effect of the prior p164
+  - 5.3.3 Bayes factors p165
+    - 5.3.3.1 Example: Testing if a coin is fair p165
+  - 5.3.4 *Jeffrey's-Lindley paradox p166
 - 5.4 Priors p167
+  - 5.4.1 Uninformative priors p167
+  - 5.4.2 Jeffrey's priors p168
+    - 5.4.2.1 Example: Jeffrey's prior for the Bernoulli adn multinoulli p169
+    - 5.4.2.2 Example: Jeffrey's prior for the location and scale parameters p170
+  - 5.4.3 Robust priors p170
+  - 5.4.4 Mixture of conjugate priors p171
+    - 5.4.4.1 Example p171
+    - 5.4.4.2 Application: Finding conserved regions in DNA and protein sequences p172
 - 5.5 Hierarchical Bayes p174
+  - 5.5.1 Example: modeling related cancer rates p173
 - 5.6 Emperical Bayes p174
+  - 5.6.1 Example: beta-binomial model p175
+  - 5.6.2 Example: Gaussian-Gaussian model p176
+    - 5.6.2.1 Example: predicting baseball scores p176
+    - 5.6.2.2 Estimating the hyper-parameters p178
 - 5.7 Bayesian decision theory p178
+  - 5.7.1 Bayes estimators for common loss functions p179
+    - 5.7.1.1 MAP estimate minimized 0-1 loss p179
+    - 5.7.1.2 Reject option p180
+    - 5.7.1.3 Posterior mean minimizes l2 (quadratic) loss p180
+    - 5.7.1.4 Posterior media minimizes l1 (absolute) loss p181
+    - 5.7.1.5 Supervised learning p182
+  - 5.7.2 The false positive vs false negative tradeoff p182
+    - 5.7.2.1 ROC curves and all that p183
+    - 5.7.2.2 Precision recall curves p184
+    - 5.7.2.3 *F-scores p185
+    - 5.7.2.4 *False discovery rates p186
+  - 5.7.3 Other topics  * p186
+    - 5.7.3.1 Contextual bandits p186
+    - 5.7.3.2 Utility theory p187
+    - 5.7.3.3 Sequential decision theory p188
 
 #### 6 Frequentitist Statistics p193
 - 6.1 Introduction p193
 - 6.2 Sampling distribution of an estimator p193
+  - 6.2.1 Bootstrap p194
+  - 6.2.2 Large sample theory for the MLE * p195
 - 6.3 Frequentist decision theory p197
+  - 6.3.1 Bayes risk p197
+  - 6.3.2 Minmax risk p198
+  - 6.3.3 Admissible estimators p199
+    - 6.3.3.1 Example p199
+    - 6.3.3.2 Stein's paradox * p201
+    - 6.3.3.3 Admissibility is not enough p202
 - 6.4 Desirable properties of estimators p202
+  - 6.4.1 Consistent estimators p202
+  - 6.4.2 Unbiased estimators p203
+  - 6.4.3 Minimum variance estimators p203
+  - 6.4.4 The bias variance tradeoff p204
+    - 6.4.4.1 Example: estimating a Gaussian mean p205
+    - 6.4.4.2 Example: ridge regression p206
+    - 6.4.4.3 Bias-variance tradeoff for classification p207
 - 6.5 Emperical risk minimization p207
+  - 6.5.1 Regularized risk minimization p208
+  - 6.5.2 Structural risk minimization p208
+  - 6.5.3 Estimating the risk using cross validation p209
+    - 6.5.3.1 Example: using CV to pick lambda for ridge regression p210
+    - 6.5.3.2 The one standard error rule p210
+    - 6.5.3.3 CV for model selection in non-probabilistic unsupervised learning p211
+  - 6.5.4 *Upper-bounding the risk using statistical learning theory p211
+  - 6.5.5 Surrogate loss functions p213
 - 6.6 *Pathologies of frequentist statistics p214
+  - 6.6.1 Counter-intuitive behavior of confidence intervals p214
+  - 6.6.2 p-values considered harmful p215
+  - 6.6.3 The likelihood principle p217
+  - 6.6.4 Why isn't everyone a Bayesian? p217
 
 #### 7 Linear Regression p219
 - 7.1 Introduction p219
